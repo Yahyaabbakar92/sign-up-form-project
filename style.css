@@ -1,0 +1,54 @@
+@font-face {
+    font-family: hackney;
+    src: url(./fonts/HackneyPersonalUseOnly.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: hackney, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-side {
+    position: relative;
+    width: 70vw;
+    min-width: 400px;
+    height: 100vh;
+    background: url(./images/anastase-maragos-I6xpuYm_byM-unsplash_original.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    width: 100%;
+    background-color: rgba(48, 48, 48, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+img {
+    width: 5rem;   
+}
+
+.left-side p {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(172, 178, 178);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.15rem;
+}

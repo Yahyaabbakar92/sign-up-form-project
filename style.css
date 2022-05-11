@@ -8,7 +8,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: hackney, sans-serif;
+    font-family: sans-serif, Courier, monospace;
+    text-transform: uppercase;
 }
 
 .container {
@@ -17,7 +18,7 @@
 
 .left-side {
     position: relative;
-    width: 70vw;
+    width: 90vw;
     min-width: 400px;
     height: 100vh;
     background: url(./images/anastase-maragos-I6xpuYm_byM-unsplash_original.jpg);
@@ -25,6 +26,7 @@
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -39,6 +41,7 @@
 
 h1 {
     font-size: 4.5rem;
+    font-family: hackney, sans-serif;
 }
 
 img {
@@ -49,6 +52,88 @@ img {
     position: absolute;
     bottom: 10px;
     color: rgb(172, 178, 178);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1.15rem;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.header,
+.submit-section {
+    background-color: rgba(227, 213, 197, 0.35);
+}
+
+.header {
+    padding: 120px 20px 20px 30px;
+}
+
+.header p,
+.header em {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.input-section {
+    padding: 40px 20px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    box-shadow: 0px 5px 5px rgba(99, 94, 94, 0.123);
+}
+
+.input-section p {
+    padding-bottom: 20px;
+}
+
+#my-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 60vw;
+}
+
+label {
+    width: 130px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 25%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.01);
+}
+
+input:focus {
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.342);
+    outline: none;
+  }
+  
+input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100)
+  }
+  
+input:focus:valid {
+    border: rgb(13, 0, 255) 2px solid;
+  }
+
+.submit-section {
+    padding: 50px 20px 235px 30px;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.05);
 }
